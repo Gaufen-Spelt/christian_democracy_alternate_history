@@ -39,6 +39,6 @@ Due to the unwillingness of our Wurttemberg Chapter to face new elections, they 
 @snap
 title: The cabinet falls...
 subtitle: An election now will only disadvantage us
-on-arrival: pro_republic -= 3; left_dissent += 3; z_catholic -= 4; z_rural -= 2; dnvp_rural -= 3; nsdap_rural += 2; others_rural += 3; in_christian_coalition_toleration_wurttemberg = 0; next_election_time_wurttemberg = time + 3
+on-arrival: pro_republic -= 3; left_dissent += 3; z_catholic -= 4; z_rural -= 2; dnvp_rural -= 3; nsdap_rural += 2; others_rural += 3; in_christian_coalition_toleration_wurttemberg = 0; next_election_year_wurttemberg = 1929; next_election_month_wurttemberg = 11; 
 
 The fall of the Bolz cabinet has led the <span style="color: #FF7F00;">Christian Left</span> to critisise our unwillingness to cooperate with the <span style="color: #c00000;">**SPD**</span>. 
