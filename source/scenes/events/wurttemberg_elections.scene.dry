@@ -29,16 +29,16 @@ for (var c of Q.classes) {
 
 
 // Define adjustment factors
-Q.adjustmentFactors_spd_wurttemberg = 0.85;
+Q.adjustmentFactors_spd_wurttemberg = 0.80;
 Q.adjustmentFactors_aspd_wurttemberg = 0.2;
-Q.adjustmentFactors_kpd_wurttemberg = 0.85;
-Q.adjustmentFactors_ddp_wurttemberg = 3.0;
+Q.adjustmentFactors_kpd_wurttemberg = 0.70;
+Q.adjustmentFactors_ddp_wurttemberg = 2.1;
 Q.adjustmentFactors_z_wurttemberg = 1.29;
-Q.adjustmentFactors_dvp_wurttemberg = 1.0;
-Q.adjustmentFactors_wp_wurttemberg = 0.0;
+Q.adjustmentFactors_dvp_wurttemberg = 0.52;
+Q.adjustmentFactors_wp_wurttemberg = 0.24;
 Q.adjustmentFactors_cnblp_wurttemberg = 0.7;
 Q.adjustmentFactors_kvp_wurttemberg = 0.8;
-Q.adjustmentFactors_dnvp_wurttemberg = 0.6;
+Q.adjustmentFactors_dnvp_wurttemberg = 0.4;
 Q.adjustmentFactors_dnf_wurttemberg = 0.5;
 Q.adjustmentFactors_nsdap_wurttemberg = 0.7;
 Q.adjustmentFactors_other_wurttemberg = 1.2;
