@@ -24,7 +24,7 @@ Chairman: [? if dgb_leader = "Stegerwald" : Adam Stegerwald ?][? if dgb_leader =
 - @labor_opposition: Reduce the opposition of Labor towards Bruning's Cabinet
 - @gcg: The <span style="color: #000000;">**GcG**</span>
 - @gedag: The <span style="color: #a2c617;">**Gedag**</span>
-- @return: We do not need want to interfere in union affairs.
+- @easy_discard: We do not need want to interfere in union affairs.
 
 @ideals
 subtitle: This will prevent infighting and mollify dissenting factions.
