@@ -22,7 +22,7 @@ The social welfare program, including unemployment insurance, healthcare, and ol
 subtitle: This will hurt the workers. +1 Budget
 unavailable-subtitle: There is nothing left to cut.
 choose-if: welfare >= -5
-on-arrival: budget += 1; workers_z -= 4; unemployed_z -= 4; catholic_z -= 1; workers_kpd += 1; workers_nsdap += 1; welfare -= 1; labor_dissent += 8; labor_strength -= 5; dvp_relation += 6; dnvp_relation += 6; spd_relation -= 5; pro_republic -= 3; coalition_dissent -= 1 if in_grand_coalition and coalition_dissent > 0; kpd_coalition_dissent += 1; kpd_relation -= 5; inflation -= 0.3; unemployed += 0.4; economic_growth -= 0.2;
+on-arrival: budget += 1; workers_z -= 2; unemployed_z -= 3; catholic_z -= 2; workers_kpd += 1; workers_nsdap += 1; welfare -= 1; labor_dissent += 8; labor_strength -= 5; dvp_relation += 6; dnvp_relation += 6; spd_relation -= 5; pro_republic -= 3; coalition_dissent -= 1 if in_grand_coalition and coalition_dissent > 0; kpd_coalition_dissent += 1; kpd_relation -= 5; inflation -= 0.3; unemployed += 0.4; economic_growth -= 0.2;
 
 We have reduced levels of social welfare spending. This means more poverty and suffering for the working class. The <span style="color: #700000;">**Communists**</span> and <span style="color: #c00000;">**SPD**</span> are criticizing us for our actions while our labor wing is in an uproar.
 
@@ -31,14 +31,14 @@ We have reduced levels of social welfare spending. This means more poverty and s
 view-if: unemployed <= 15
 choose-if: budget > 0
 subtitle: -1 Budget
-on-arrival: budget -= 1; workers_z += 3*(1-dissent); unemployed_z += 3*(1-dissent); catholic_z += 1*(1-dissent); spd_relation += 5; kpd_relation += 5; welfare += 1; labor_dissent -= 5; coalition_dissent += 1 if welfare > 1; welfare_goal_completed += 1; inflation += 0.3; unemployed -= 0.4; economic_growth += 0.2;
+on-arrival: budget -= 1; workers_z += 2*(1-dissent); unemployed_z += 2*(1-dissent); catholic_z += 1*(1-dissent); spd_relation += 5; kpd_relation += 5; welfare += 1; labor_dissent -= 5; coalition_dissent += 1 if welfare > 1; welfare_goal_completed += 1; inflation += 0.3; unemployed -= 0.4; economic_growth += 0.2;
 
 We have increased welfare spending. Our labor unions are pleased.
 
 @increase_spending_post_depression
 view-if: unemployed > 15
 choose-if: budget > 0
-on-arrival: budget -= 1; workers_z += 2*(1-dissent); unemployed_z += 2*(1-dissent); spd_relation += 5; kpd_relation += 5; coalition_dissent += 1 if welfare > 0; welfare_goal_completed += 1; inflation += 0.3
+on-arrival: budget -= 1; workers_z += 1*(1-dissent); unemployed_z += 2*(1-dissent); spd_relation += 5; kpd_relation += 5; coalition_dissent += 1 if welfare > 0; welfare_goal_completed += 1; inflation += 0.3
 subtitle: The increased levels of unemployment necessitate more spending on aid to maintain the same benefits. -1 Budget
 
 Increasing welfare spending is necessary in light of the rise in unemployment, so we are essentially treading water.
@@ -51,7 +51,7 @@ We have kept welfare spending the same.
 
 @spending_same_post_depression
 view-if: unemployed > 15
-on-arrival: workers_z -= 1; unemployed_z -= 1; catholics_z -= 1; welfare -= 1; labor_dissent += 4
+on-arrival: unemployed_z -= 1; catholics_z -= 1/2; welfare -= 1; labor_dissent += 4
 subtitle: The increased levels of unemployment necessitate more spending on aid.
 
 Increasing welfare spending is necessary in light of the rise in unemployment, so we have essentially cut welfare. The workers are justifiably displeased - we are sacrificing their livelihoods for the sake of fiscal orthodoxy.
