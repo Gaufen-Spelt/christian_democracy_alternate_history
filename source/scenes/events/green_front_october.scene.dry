@@ -7,7 +7,7 @@ Q.schiele_points = 0;
 if (Q.agriculture_minister == 'Schiele') {
     Q.schiele_points += 1;
 }
-if (Q.special_interests > 120) {
+if (Q.pro_republic > 67) {
     Q.schiele_points -= 1;
 }
 if (Q.rural_dnvp <= 30) {
