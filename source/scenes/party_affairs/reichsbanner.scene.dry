@@ -10,7 +10,7 @@ max-visits: 6
 
 = <span style="color: #c00000;">**Reichsbanner**</span>
 
-The *<span style="color: #c00000;">**Reichsbanner**</span> Schwarz-Rot-Gold* is a mass organization for the defense of the Republic against the extremists who threaten it. Some would call it a paramilitary, although currently it is hardly any sort of military. It is officially associated with the pro-democratic parties -the <span style="color: #c00000;">**SPD**</span>, <span style="color: #000000;">**Center**</span> and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but by far the largest component is with the <span style="color: #c00000;">**SPD**</span>.
+The *<span style="color: #c00000;">**Reichsbanner**</span> <span style="color: #000000;"><b><i>Schwarz</i></b></span>-<span style="color: #DD0000;"><b><i>Rot</i></b></span>-<span style="color: #FFCC00;"><b><i>Gold</i></b></span>* is a mass organization for the defense of the Republic against the extremists who threaten it. Some would call it a paramilitary, although currently it is hardly any sort of military. It is officially associated with the pro-democratic parties -the <span style="color: #c00000;">**SPD**</span>, <span style="color: #000000;">**Center**</span> and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but by far the largest component is with the <span style="color: #c00000;">**SPD**</span>.
 
 [? if pro_republic < 20: The unpopularity of the republic that the <span style="color: #c00000;">**Reichsbanner**</span> strives to defend has led to difficulties in recruitment. ?]
 
