@@ -1,13 +1,13 @@
 title: Young Plan Ratified
 new-page: true
 tags: event
-view-if: year = 1930 and month >= 3 
+view-if: year = 1930 and month >= 3 and spd_in_government = 1
 on-arrival: dvp_right += 2; ddp_right += 0.5; dvp_relation -= 2; dnvp_relation -= 4; lvp_right += 3; lvp_relation -= 5; hindenburg_angry += 10; young_plan_ratified = 1
 max-visits: 1
 
 = Young Plan Ratified
 
-The Young Plan is finally ratified, and with that, the main reason President <span style="color: #808080;">Hindenburg</span> and the [? if not lvp_formed and in_grand_coalition: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed or not in_grand_coalition: bourgeois right?] has been keeping us around is gone. Hindenburg has notified Chancellor [+ chancellor +] that he expects a sweeping reform of German finances soon, a challenging task in a government like this.
+The Young Plan is finally ratified, and with that, the main reason President <span style="color: #808080;">Hindenburg</span> and the [? if not lvp_formed and in_grand_coalition: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed or not in_grand_coalition: bourgeois right?] has been keeping us around is gone. <span style="color: #808080;">Hindenburg</span> has notified Chancellor [+ chancellor +] that he expects a sweeping reform of German finances soon, a challenging task in a government like this.
 
 
 
