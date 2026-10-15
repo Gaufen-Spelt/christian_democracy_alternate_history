@@ -22,7 +22,7 @@ Despite the <span style="color: #000000;">We</span><span style="color: #DD0000;"
 
 @equal
 subtitle: Ensure equal treatment for Jews and Catholics in the civil service
-on-arrival: dnvp_relation -= 3; catholics_z += 3*(1-dissent); nationalism -= 5; new_middle_z += 1
+on-arrival: dnvp_relation -= 3; catholics_z += 3*(1-dissent); nationalism -= 5; new_middle_z += 1; ddp_relation += 5; 
 max-visits: 3
 
 These policies strongly discourage discrimination on the basis of religion during the hiring process, enabling the entry of those from more diverse backgrounds to enter the traditionally reactionary bureaucracy. This has led to an influx of Aussenseiter (outsiders) in the civil service, with the right wing parties accusing us to turning the bureaucracy into a 'pork barrel institution'.
@@ -40,7 +40,7 @@ Schreiber and Kaas make some progress regarding the Prussian Concordat.
 
 @school
 subtitle: This has been our goal since 1927.
-on-arrival: welfare += 1; catholics_z += 5*(1-dissent); dvp_relation -= 10; clergy_relation += 1
+on-arrival: catholics_z += 5*(1-dissent); dvp_relation -= 10; clergy_relation += 1; ddp_relation -= 5;
 max-visits: 1
 
 We have increased welfare spending on women and children. [? if welfare >= 1 and unemployed >= 15 : Some of our coalition partners consider increased welfare spending profligate at this time. ?]
