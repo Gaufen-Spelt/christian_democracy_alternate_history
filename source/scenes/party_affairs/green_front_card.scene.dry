@@ -11,24 +11,25 @@ tags: party_affairs
 
 As an umbrella organisation representing organised agriculture, the formation of the <span style="color: #0dba1e;">**Green Front**</span> is a response to the growing crisis in the countryside. With the elements of the <span style="color: #3E88B3;">**DNVP**</span>, the <span style="color: #000000;">**Center Party**</span> and the <span style="color: #006400;">**CNBLP**</span>, it possesses sizable influence in German Politics. How might we utilise the <span style="color: #0dba1e;">**Green Front**</span> to advance our goals?
 
-- @dnvp: Improve our relations with the <span style="color: #3E88B3;">**DNVP**</span>
+- @junker: Rail against the influence of Junkers and the bankrupt large estates
 - @influence: Root out those with sympathies towards the <span style="color: #7A3C00;">**NSDAP**</span> within the <span style="color: #0dba1e;">**Green Front**</span>
 - @program: Start formulating the <span style="color: #0dba1e;">**Green Front**</span> program
 - @speedup: Organise more meetings to draft the <span style="color: #0dba1e;">Green Front</span> program
 - @pacify: Reiterate our commitment to helping German farmers
 - @easy_discard
 
-@dnvp
-subtitle: Amidst the deepening agricultural crisis, a coordinated response with <span style="color: #385A38;">agrarian</span> interests in the <span style="color: #3E88B3;">**DNVP**</span> is crucial in slowing the radicalisation of the rural people. Deepening ties with them can also pave the way for further cooperation with the <span style="color: #3E88B3;">**DNVP**</span> in the future.
-on-arrival: dnvp_relation += 8; dnvp_relation -= 2 if green_front = 0.5; dnvp_relation -= 2 if dnvp_leader = "Hugenberg"; dnvp_relation -= 1 if green_front_leader = "Hepp"
+@junker
+subtitle: as
+choose-if: green_front = 1 and green_front_leader != "Schiele" 
+unavailable-subtitle: [? if green_front < 1: The <span style="color: #0dba1e;">**Green Front**</span> will collapse. ?][? if green_front_leader = "Schiele" : Schiele would not allow this course of action. ?]
+on-arrival: dnvp_relation -= 3; dnvp_relation += 2 if dnvp_leader = "Wildau"; anti_junker += 1; rural_cnblp += 2; right_dissent += 3; right_dissent -= 2 if hermes_advisor = 1; special_interests += 3; rural_z += 1
 
-The <span style="color: #385A38;">agrarians</span> within our party has reached out to the friendly portions of the <span style="color: #3E88B3;">**DNVP**</span> and found some common ground with them. This has also helped strengthen the <span style="color: #385A38;">agrarian</span> faction in the <span style="color: #3E88B3;">**DNVP**</span>.
-
+as
 
 @influence
 subtitle: The radicalism of the <span style="color: #7A3C00;">**NSDAP**</span> and their propagation of the 'Blood and Soil' ideology has much appeal amongst some members of the <span style="color: #0dba1e;">**Green Front**</span>. We must strengthen the <span style="color: #000000;">**Center Party's**</span> and <span style="color: #3E88B3;">**DNVP**</span> influence in the <span style="color: #0dba1e;">**Green Front**</span>, lest the rural electorate turn to the demagogic <span style="color: #7A3C00;">**Nazis**</span> for a solution. 
 unavailable-subtitle: Kalckreuth's <span style="color: #385A38;">**RLB**</span> will leave the <span style="color: #0dba1e;">**Green Front**</span> if we do this.
-choose-if: rlb_leader = "Schiele"
+choose-if: rlb_leader = "Schiele" and nazi_
 on-arrival: rural_nsdap -= 3; nationalism -= 3; rural_nsdap += 1 if green_front = 0.5; rural_nsdap -= 1 if green_front_leader = "Hepp"; special_interests += 3 if green_front_leader = "Hepp"
 
 We rail against the <span style="color: #7A3C00;">**NSDAP's**</span> miltant tendencies and their irresponsible rhetoric, damaging their credibility in the eyes of the farmers.
