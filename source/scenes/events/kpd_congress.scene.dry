@@ -9,16 +9,16 @@ if (Q.spd_relation > 65) {
 if (Q.z_party_leader == "Joos") {
     Q.kpd_points += 1;
 }
-if (Q.nazi_r >= 10) {
+if (Q.nazi_votes >= 10) {
     Q.kpd_points += 1;
 }
 if (Q.spd_left > spd_right) {
-    Q.kpd_points -= 1;
+    Q.kpd_points += 1;
 }
 if (Q.spd_in_government = 1) {
     Q.kpd_points -= 1;
 }
-if (Q.nazi_r <= 10) {
+if (Q.nazi_votes <= 10) {
     Q.kpd_points -= 1;
 }
 if (Q.thalmann_arrested = 1) {
@@ -30,6 +30,8 @@ if (Q.spd_in_prussa = 1) {
 if (Q.spd_relation <= 45) {
     Q.kpd_points += 1;
 }
+if (Q.spd_votes < 25)
+    Q.kpd_points += 1
 !}
 max-visits: 1
 priority: 2
