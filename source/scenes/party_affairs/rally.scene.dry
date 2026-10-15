@@ -86,9 +86,9 @@ on-arrival: catholics_z += 4*(1-dissent); catholics_z += 2*(1-dissent) if prussi
 Reminding our constituents of our confessional nature is a good way of energising our electoral base. [? if prussian_concordat = 1 : Our work in the Prussian Concordat have assisted our messaging. ?]
 
 @welfare
-on-arrival: workers_spd += 3*(1-dissent); workers_z += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_z += 4*(1-dissent) if welfare > 1;
+on-arrival: workers_z += 3*(1-dissent); workers_z += 2*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_z += 3*(1-dissent) if welfare > 1;
 
-The pro-labor message appeals to the organized workers from the Labor wings, whose benefits are the accomplishments of our time in government. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+The pro-labor message appeals to the organized workers from the labor wing, whose benefits are the accomplishments of our time in government. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
 @democracy
 on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; catholics_z += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_z += 4*(1-dissent) if democratization >= 3; ddp_left += 0.5 if pro_republic >= 70
@@ -99,7 +99,7 @@ Our speakers defend the status quo and rail against the <span style="color: #700
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, our Catholic base is enthusiastic about our message. ?]
 
 @right
-on-arrival: old_middle_z += 3*(1-dissent); rural_z += 3*(1-dissent); old_middle_z += 3*(1-dissent) if dnvp_relation > 70; rural_z += 3*(1-dissent) if dnvp_relation > 70;
+on-arrival: old_middle_z += 2*(1-dissent); rural_z += 2*(1-dissent); old_middle_z += 1*(1-dissent) if dnvp_relation > 70; rural_z += 1*(1-dissent) if dnvp_relation > 70;
 
 Rallying the forces of the German Right together paves the way for future cooperation with them. 
 [? if dnvp_relation > 70 : Our constant cooperation with the <span style="color: #3E88B3;">**DNVP**</span> has made our messaging more effective. ?]
