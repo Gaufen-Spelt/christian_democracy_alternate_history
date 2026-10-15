@@ -665,7 +665,7 @@ Gottfried Treviranus' appointment as chancellor is approved by our potential all
 
 @bruning
 title: We will have the chancellorship.
-subtitle: Heinrich Brüning will be chancellor. This is unexpected and we will need to give up some influence in the government.
+subtitle: Heinrich Brüning will be chancellor. This is unexpected and we will need to give up some influence in government.
 on-arrival: chancellor = "Bruning"; chancellor_party = "Z"; spd_in_government = 0; leverage -= 5
 go-to: ministries
 
@@ -1267,12 +1267,12 @@ view-if: not historical_mode
 on-arrival: spd_in_government = 1; chancellor = "Braun"; chancellor_party = "SPD"; leverage += 10; in_grand_coalition = 1 if in_weimar_coalition == 0; agriculture_minister_party = "Z" if agri_minister = 1; agriculture_minister = "Hermes" if agri_minister = 1; leverage -= 10 if agri_minister = 1;
 go-to: ministries
 
-We have been promised by the <span style="color: #c00000;">**SPD**</span> to have more influence in the government in response to the appointment of Braun as chancellor.
+We have been promised by the <span style="color: #c00000;">**SPD**</span> to have more influence in government due to the appointment of Braun as chancellor.
 
 
 @z_chancellor
 title: We will have the chancellorship.
-subtitle: Heinrich Brüning will be chancellor. This will cause internal dissent within the <span style="color: #c00000;">**SPD**</span> and we will need to grant them more influence in the government.
+subtitle: Heinrich Brüning will be chancellor. This will cause internal dissent within the <span style="color: #c00000;">**SPD**</span> and we will need to grant them more influence in government.
 on-arrival: spd_relation -= 5; dvp_relation += 5; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Bruning"; chancellor_party = "Z"; spd_in_government = 1; leverage -= 5; agriculture_minister_party = "Z" if agri_minister = 1; agriculture_minister = "Hermes" if agri_minister = 1; leverage -= 10 if agri_minister = 1;
 go-to: ministries
 
@@ -1284,7 +1284,7 @@ This is highly unexpected, and those in the left wing of the <span style="color:
 @z_chancellor_wirth
 title: Let Joseph Wirth be chancellor.
 view-if: z_party_leader == "Joos"
-subtitle: Wirth is part of the <span style="color: #FF7F00;">Christian Left</span> in the <span style="color: #000000;">**Center Party**</span>. We will need to grant the <span style="color: #E3000F;">**SPD**</span> more influence in the government.
+subtitle: Wirth is part of the <span style="color: #FF7F00;">Christian Left</span> in the <span style="color: #000000;">**Center Party**</span>. We will need to grant the <span style="color: #E3000F;">**SPD**</span> more influence in government.
 on-arrival: left_labor_dissent -= 10; spd_relation += 6; ddp_relation += 3; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; leverage += 5; agriculture_minister_party = "Z" if agri_minister = 1; agriculture_minister = "Hermes" if agri_minister = 1; leverage -= 10 if agri_minister = 1;
 go-to: ministries
 
