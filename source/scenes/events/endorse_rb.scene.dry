@@ -19,7 +19,7 @@ However, our socially heterogeneous base might not take kindly to such cooperati
 @endorse
 subtitle: This is will strengthen the forces of democracy in the fight against <span style="color: #7A3C00;">**NSDAP**</span>. 
 choose-if: z_party_leader == "Joos" or z_party_leader == "Kaas"
-on-arrival: pro_republic += 5; spd_right += 1; spd_relation += 5; ddp_relation += 3; ddp_left += 1; z_new_middle += 3; z_catholics += 3; nsdap_workers -= 3; kpd_workers += 2; nsdap_rural -= 2; z_dominance += 5; right_dissent += 7; endorse_seen += 1; rb_strength += 700; rb_militancy += 0.1; z_endorse_rb += 1; dnvp_relation -= 3;
+on-arrival: pro_republic += 5; spd_right += 1; spd_relation += 6; ddp_relation += 4; ddp_left += 1; z_new_middle += 2; z_catholics += 2; nsdap_unemployed -= 3; kpd_workers -= 2; z_dominance += 5; right_dissent += 10; endorse_seen += 1; rb_strength += 700; rb_militancy += 0.1; z_endorse_rb += 1; dnvp_relation -= 8; new_middle_ddp += 1;
 
 Following the concerning rise of the <span style="color: #7A3C00;">**NSDAP**</span> and growing disillusion with the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic, control of the streets is neccessary in combating the militancy of politcal extremists. Due to our friendly relations with the <span style="color: #c00000;">**SPD**</span>, we have now encouraged our members to join the <span style="color: #c00000;">**Reichbanner**</span>. The <span style="color: #FF7F00;">Christian Left</span> faction is ecstatic, while the right is in an uproar over this sharp turn to the left and demands we reverse our course at once.
 
