@@ -4,6 +4,7 @@ subtitle: A new agreement on reparations
 tags: event
 view-if: year = 1929 and month >= 12 and dnvp_leader = "Hugenberg" 
 max-visits: 1
+face-image: img/youngplan.jpg
 on-arrival: {!
 (Q.young_plan_votes += ((Q.young_plan_modifier)*(Q.dnvp_votes + Q.nsdap_votes)));
 (Q.young_plan_votes += Math.round(0.75*(Q.cnblp_votes)*100.0)/100.0);
