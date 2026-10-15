@@ -64,16 +64,16 @@ face-image: img/portraits/JoosJoseph.jpg
 chud With the National Council's rejection of Stegerwald, the party's close relations with the <span style="color: #c00000;">**SPD**</span> has led the delegates to nominate Joseph Joos as chairman to continue further cooperation with the <span style="color: #c00000;">**SPD**</span>. As chairman of the Catholic Workers Associations and de-facto leader of the <span style="color: #FF7F00;">Christian Left</span>, he increases the appeal of the <span style="color: #000000;">**Center Party**</span> to workers and progressives. 
 
 @woke_joos
-unavailable-subtitle: [? if clerical_relation < 6 : Joos' economically left policies are unpopular amongst the clergy. ?][? if pro_republic < 55 : His inclinations towards republicanism are incompatible with the current national mood. ?][? if left_strength < 25 or left_strength <= 0.4(labor_strength + right_strength) : The <span style="color: #FF7F00;">Christian Left</span> faction is not strong enough to elect Joos. ?][? spd_relation < 65 : His policy of close cooperation with the <span style="color: #c00000;">**SPD**</span> is unpopular within the party. ?]
+unavailable-subtitle: [? if clerical_relation < 6 : Joos' economically left policies are unpopular amongst the clergy. ?][? if pro_republic < 55 : His inclinations towards republicanism are incompatible with the current national mood. ?][? if left_strength < 25 or left_strength <= 0.4*(labor_strength + right_strength) : The <span style="color: #FF7F00;">Christian Left</span> faction is not strong enough to elect Joos. ?][? spd_relation < 65 : His policy of close cooperation with the <span style="color: #c00000;">**SPD**</span> is unpopular within the party. ?]
 subtitle: Joos belongs to the <span style="color: #FF7F00;">left</span> and supports increased cooperation with the <span style="color: #c00000;">**SPD**</span>. However, he might have trouble controlling the right within our party. 
-choose-if: clerical_relation > 5 and pro_republic >= 55 and left_strength >= 25 and left_strength > 0.4(labor_strength + right_strength) and spd_relation >= 65
+choose-if: clerical_relation > 5 and pro_republic >= 55 and left_strength >= 25 and left_strength > 0.4*(labor_strength + right_strength) and spd_relation >= 65
 on-arrival: z_party_leader = "Joos"; catholics_spd += 2; workers_z += 1*(1-dissent); z_party_leader1 += 1; spd_relation += 8*(1-dissent); z_rural -= 2*(1-dissent); left_strength += 4*(1-dissent); right_dissent += 3; pro_republic += 3; woke_joos = 1
 face-image: img/portraits/JoosJoseph.jpg
 
 woke With the National Council's rejection of Stegerwald, the party's close relations with the <span style="color: #c00000;">**SPD**</span> has led the delegates to nominate Joseph Joos as chairman to continue further cooperation with the <span style="color: #c00000;">**SPD**</span>. As chairman of the Catholic Workers Associations and de-facto leader of the <span style="color: #FF7F00;">Christian Left</span>, he increases the appeal of the <span style="color: #000000;">**Center Party**</span> to workers and progressives. 
 
 @kaas
-view-if: not (clerical_relation > 4 and pro_republic >= 55 and center_strength >= 10 and spd_relation >= 55) and not (clerical_relation > 5 and pro_republic >= 60 and left_strength >= 25 and left_strength > 0.4(labor_strength + right_strength) and spd_relation >= 65)
+view-if: not (clerical_relation > 4 and pro_republic >= 55 and center_strength >= 10 and spd_relation >= 55) and not (clerical_relation > 5 and pro_republic >= 60 and left_strength >= 25 and left_strength > 0.4*(labor_strength + right_strength) and spd_relation >= 65)
 subtitle: A dark horse emerges... 
 on-arrival: z_party_leader = "Kaas"; spd_relations -= 5; prussian_concordat_progress += 1; catholics_z += 3; dvp_right += 1; ddp_relations -= 3; dvp_relations -= 5; clergy_relation += 2;
 face-image: img/portraits/KaasLudwig.jpg
