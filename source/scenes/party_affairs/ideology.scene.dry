@@ -12,7 +12,13 @@ max-visits: 3
 
 The <span style="color: #000000;">**Center Party**</span> is torn between the divergent demands of its socially heterogenous base. Which faction shall we empower to guide the <span style="color: #000000;">**Center Party**</span>?
 
-[? if ideology != 0 : We have previously chosen to empower the [+ ideology +] faction. Changing it will likely have drawbacks. ?]
+
+[? if ideology == "Christian Left": We have previously chosen to empower the <span style="color: #FF7F00;">Christian Left</span> faction. Changing it will likely have drawbacks. ?]
+[? if ideology == "Centrist": We have previously chosen to empower the Center faction. Changing it will likely have drawbacks. ?]
+[? if ideology == "Labor": We have previously chosen to empower the Labor faction. Changing it will likely have drawbacks. ?]
+[? if ideology == "Catholic Conservative": We have previously chosen to empower the Catholic Conservative faction. Changing it will likely have drawbacks. ?]
+
+
 
 - @left: In favor of socially progressive policies and republicanism, we seek extensive cooperation with the <span style="color: #c00000;">**SPD**</span> to preserve democracy.
 - @labor: Advancing the rights and welfare of workers is our primary goal.
@@ -27,7 +33,7 @@ if (Q.ideology && Q.ideology != "Christian Left") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "Christian Left"; left_strength += 10; left_dissent -= 5; spd_relation += 5; dnvp_relation -= 5; ddp_relation += 3; democratization += 1
+on-departure: ideology = "Christian Left"; left_strength += 10; left_dissent -= 5; spd_relation += 5; dnvp_relation -= 5; ddp_relation += 3; democratization += 1; new_middle_z += 1/3;
 
 The <span style="color: #FF7F00;">Christian Left</span> faction is decidedly pro-republic and seeks to continue the current constituitional order. 
 @labor
@@ -37,9 +43,9 @@ if (Q.ideology && Q.ideology != "Labor") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "Labor"; labor_strength += 10; labor_dissent -= 5; spd_relation += 3; dnvp_relation -= 2; ddp_relation += 1;
+on-departure: ideology = "Labor"; labor_strength += 10; labor_dissent -= 5; spd_relation += 3; dnvp_relation -= 2; ddp_relation += 1; worker_z += 1/3; 
 
-The labor wing of our party has strong ties with the <span style="color: #c00000;">**SPD**</span> and most support the republic.
+The labor wing of our party originates from the German Trade Union Confederation (<span style="color: #000000;">**DGB**</span>) with most being supportive of the republic.
 
 @centrist
 on-arrival: {!
@@ -48,7 +54,7 @@ if (Q.ideology && Q.ideology != "centrist") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; right_dissent -= 5; labor_dissent -= 8;
+on-departure: ideology = "Centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; right_dissent -= 5; labor_dissent -= 8; catholic_z += 1/3; 
  
 The Centrists, led by Marx and Guerard, are generally republican by reason. While they prefer to work with the <span style="color: #3E88B3;">**DNVP**</span>, they do not rule out coalitions with the <span style="color: #c00000;">**SPD**</span>.
 
@@ -59,9 +65,9 @@ if (Q.ideology && Q.ideology != "Catholic Conservative") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "Catholic Conservative"; right_strength += 10; right_dissent -= 5; dnvp_relation += 5; dvp_relation += 5; spd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "Catholic Conservative"; right_strength += 10; right_dissent -= 5; dnvp_relation += 5; dvp_relation += 5; spd_relation -= 8; rural_z += 1/6; old_middle_z += 1/6;
 
-Represented by bourgeois aristocrats and <span style="color: #385A38;">agrarian</span> interests, the right wing of the party is skeptical of parlimentary democracy.
+Represented by bourgeois aristocrats and <span style="color: #385A38;">agrarian</span> interests, the right wing of the party is are strong anti-<span style="color: #c00000;">socialists</span> while being skeptical of parlimentary democracy.
 
 @changed
 on-arrival: left_dissent += 5; labor_dissent += 5; center_dissent += 5; right_dissent += 5
