@@ -36,11 +36,11 @@ We have enforced party discipline to reduce dissent across all factions.
 @coalition
 title: Negotiating with the Coalition
 subtitle: Hess can improve our relationships with our coalition partners in Prussia.
-choose-if: advisor_action_timer = 0 and z_prussia = 1
+choose-if: advisor_action_timer = 0 and z_in_prussia = 1 and dnvp_in_prussia = 0 
 unavailable-subtitle:
   [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-  [? if not z_prussia : The <span style="color: #000000;">Center</span> is not in the Prussian government. ?]
-
+  [? if not z_in_prussia : The <span style="color: #000000;">**Center Party**</span> is not in the Prussian government. ?]
+  [? if dnvp_in_prussia : Joseph Hess does not have contacts with the political right. ?]
 on-arrival:
   advisor_action_timer = 6;
   spd_relation += 4 if in_grand_coalition_prussia;
