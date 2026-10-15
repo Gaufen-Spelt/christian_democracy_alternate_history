@@ -9,7 +9,7 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/dnvp_walkout.jpg";  
+    image.src = "img/csvd1932.jpg";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
@@ -23,9 +23,9 @@ The <span style="color: #6D5298;">Christian Socials</span> around Hartwig, Hulse
 Ever since the debacle over the Lambach article, the <span style="color: #6D5298;">Christian Socials</span> have been moving in the direction of a break with the <span style="color: #3E88B3;">**DNVP**</span>, with only appeals from Westarp and Treviranus to preserve party unity holding them back. Building on the <span style="color: #6D5298;">Christian Social</span> Reich Union formed in 1928, they have established the <span style="color: #8ED8E4;">**Christlich-Sozialer Volksdienst**</span> (<span style="color: #8ED8E4;">**CSVD**</span>) in conjuction with regional evangelical parties. 
 Based on the <span style="color: #6D5298;">Christian Social</span> teaching of Adolf Stoecker, the <span style="color: #8ED8E4;">**CSVD's**</span> acceptance of republican government make it an anomaly amongst the minor parties.  
 
-- @goodnews: We'll watch as the enemies of the republic tear themselves apart.
+- @goodnews: A Protestant version of the <span style="color: #000000;">**Center Party**</span> has formed on our right.
 
 @goodnews
 go-to: csvd_formed
 
-The right has been considerably weakened, now is our chance to enact meaningful change without their disruption.
+Hopefully the <span style="color: #8ED8E4;">**CSVD**</span> will be more willing to work with us compared to the <span style="color: #3E88B3;">**DNVP**</span>.
