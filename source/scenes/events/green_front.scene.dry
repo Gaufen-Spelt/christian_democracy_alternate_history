@@ -19,7 +19,7 @@ if (Q.z_leader == "Stegerwald") {
     Q.green_front_points += 1;
 
 }
-if (Q.cnblp_r > 3) {
+if (Q.cnblp_votes > 3) {
     Q.green_front_points += 1;
 }
 
@@ -50,7 +50,7 @@ if (Q.rpm_strength == 2) {
 if (Q.rpm_strength == 0) {
     Q.green_front_points -= 2;
 }
-if (Q.rural_z + Q.rural_dnvp < 50) {
+if (Q.rural_z + Q.rural_dnvp + Q.rural_dvp < 50) {
     Q.green_front_points += 1;
 }
 !}
@@ -86,7 +86,7 @@ on-arrival: dnvp_relation += 3; rural_z += 1; rural_dnvp += 1; rural_nsdap += 1;
 face-image: img/portraits/HugenbergAlfred.jpg
 
 After intense negotiations, the <span style="color: #0dba1e;">Green Front</span> has finally been formed. Whlie negotiations were tricky, <span style="color: #3E88B3;">Schiele</span> has been able to present a comprehensive agricultural program aimed at the economic rehabilitation of the German farmer. However, this falls short of the creation of a united umbrella organisation representing all of organised agriculture. Instead, it represents a bid by <span style="color: #3E88B3;">Schiele</span> and <span style="color: #000000;">Hermes</span> to slow the growing radicalisation of the Rural People's Movement. 
-Following this, the Westaphalia and Rhineland chapters of the <span style="color: #385A38;">RLB</span> and <span style="color: #000000;">**VdB**</span> have issued an ultimatum to <span style="color: #000000;">Hermes</span> to further cooperation with the <span style="color: #3E88B3;">**DNVP**</span>. This has resulted in a sharp rebuke from <span style="color: #000000;">Hermes</span>, but this is indicative of the increasingly volative agricultural landscape in Germany, in which radical parties like the <span style="color: #7A3C00;">**NSDAP**</span> stand to gain.
+Following this, the Westaphalia and Rhineland chapters of the <span style="color: #385A38;">RLB</span> and <span style="color: #000000;">**VdB**</span> have issued an ultimatum to <span style="color: #000000;">Hermes</span> to further cooperation with the <span style="color: #3E88B3;">**DNVP**</span>. This has resulted in a sharp rebuke from <span style="color: #000000;">Hermes</span>, but this is indicative of the increasingly volatile agricultural landscape in Germany, in which radical parties like the <span style="color: #7A3C00;">**NSDAP**</span> stand to gain.
 
 @front_nay
 view-if: green_front_points < 3
