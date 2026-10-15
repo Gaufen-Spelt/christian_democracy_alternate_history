@@ -1352,7 +1352,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
 view-if: labor_minister_party != "Z"
-on-arrival: leverage -= 5; labor_minister_party = "Z"; labor_minister = "Stegerwald"
+on-arrival: leverage -= 5; labor_minister_party = "Z"; labor_minister = "Stegerwald"; labor_strength += 3; 
 go-to: ministries
 
 Adam Stegerwald of the <span style="color: #000000;">**Center Party**</span> has been appointed labor minister.
@@ -1364,7 +1364,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
 view-if: interior_minister_party != "Z"
-on-arrival: leverage -= 5; interior_minister_party = "Z"; interior_minister = "Wirth"
+on-arrival: leverage -= 5; interior_minister_party = "Z"; interior_minister = "Wirth"; left_strength += 3; 
 go-to: ministries
 
 Joseph Wirth of the <span style="color: #000000;">**Center Party**</span> has been appointed Interior Minister.
@@ -1400,7 +1400,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: justice_minister_party != "Z"
-on-arrival: leverage -= 10; justice_minister_party = "Z"; justice_minister = "Guerard"
+on-arrival: leverage -= 10; justice_minister_party = "Z"; justice_minister = "Guerard"; center_strength += 3; 
 go-to: ministries
 
 Theodor von Guerard of the <span style="color: #000000;">**Center Party**</span>  has been appointed Justice Minister.
@@ -1424,7 +1424,7 @@ subtitle: This is not our usual domain.
 unavailable-subtitle: We do not have enough leverage.
 choose-if: leverage >= 10 
 view-if: agriculture_minister_party != "Z"
-on-arrival: leverage -= 10; agriculture_minister_party = "Z"; agriculture_minister = "Hermes"
+on-arrival: leverage -= 10; agriculture_minister_party = "Z"; agriculture_minister = "Hermes"; right_strength += 3; 
 go-to: ministries
 tags: mins_1928
 
@@ -1455,14 +1455,14 @@ This coalition arrangement is tolerable to all.
 @drop_labor
 title: Drop the Labor Ministry.
 view-if: labor_minister_party = "Z"
-on-arrival: labor_minister_party = "SPD"; labor_minister = "Wissel"; leverage += 5; justice_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; justice_minister = "Lambach" if in_right_coalition or in_center_right_coalition
+on-arrival: labor_minister_party = "SPD"; labor_minister = "Wissel"; leverage += 5; justice_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; justice_minister = "Lambach" if in_right_coalition or in_center_right_coalition; labor_strength -= 3;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_interior
 title: Drop the Interior Ministry.
 view-if: interior_minister_party = "Z"
-on-arrival: interior_minister_party = "SPD"; interior_minister = "Severing"; leverage += 5; justice_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; justice_minister = "Keudall" if in_right_coalition or in_center_right_coalition
+on-arrival: interior_minister_party = "SPD"; interior_minister = "Severing"; leverage += 5; justice_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; justice_minister = "Keudall" if in_right_coalition or in_center_right_coalition; left_strength -= 3;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1483,7 +1483,7 @@ go-to: ministries
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = "Z"
-on-arrival: justice_minister_party = ddp_name; justice_minister = "Koch-Weser"; leverage += 10; justice_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; justice_minister = "Hergt" if in_weimar_coalition or in_center_right_coalition
+on-arrival: justice_minister_party = ddp_name; justice_minister = "Koch-Weser"; leverage += 10; justice_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; justice_minister = "Hergt" if in_weimar_coalition or in_center_right_coalition; center_strength -= 3;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1498,7 +1498,7 @@ go-to: ministries
 title: Drop the Agriculture Ministry.
 view-if: agriculture_minister_party = "Z"
 choose-if: agri_minister = 0
-on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietrich"; leverage += 10; agriculture_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; agriculture_minister = "Schiele" if in_weimar_coalition or in_center_right_coalition
+on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietrich"; leverage += 10; agriculture_minister_party = "DNVP" if in_right_coalition or in_center_right_coalition; agriculture_minister = "Schiele" if in_weimar_coalition or in_center_right_coalition; right_strength -= 3;
 unavailable-subtitle: We have promised to have a conservative agriculture minister in the next cabinet.
 tags: drop_mins_1928
 go-to: ministries
