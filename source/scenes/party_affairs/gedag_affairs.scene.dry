@@ -3,6 +3,7 @@ new-page: true
 max-visits: 36
 is-card: true
 card-image: img/CenterCampaign.jpg
+face-image: img/portraits/BechlyHans.jpg
 view-if: spd_relation > 200
 frequency: 0
 tags: party_affairs
@@ -13,7 +14,7 @@ Current Leader: Hans Bechly
 
 Dominant Union: German National Union of Commercial Employees (<span style="color: #a2c617;">**DHV**</span>)
 
-flavortext
+The <span style="color: #a2c617;">**Gedag**</span> is a 
 
 - @yellow_union: Drive out the yellow unions from the bourgeois parties
 - @nazi_purge: Guard against the increasing influence of the <span style="color: #7A3C00;">**Nazi**</span> movement in the <span style="color: #a2c617;">**DHV**</span>
