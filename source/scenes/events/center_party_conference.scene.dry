@@ -22,7 +22,7 @@ The party has splintered in two over the vote to decide his sucessor. The nomine
 @cvp_stegerwald
 unavailable-subtitle: [? if labor_dissent > 15: The white collar unions are still unhappy with Stegerwald's decision oppose wage increases last year. ?][? if labor_strength < 25: Stegerwald does not have enough influence to secure the nomination. ?][? if dnvp_relation < 55 : His policy of cooperation with the <span style="color: #3E88B3;">**DNVP**</span> is unpopular right now. ?]
 subtitle: Stegerwald sits on the right of the labor faction and would rather work with the political right than the <span style="color: #c00000;">**SPD**</span>.
-choose-if: clerical_relation >= 6 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation >= 55 and labor_strength >= right_strength
+choose-if: clerical_relation >= 6 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation >= 55 and labor_strength >= right_strength
 on-arrival: z_party_leader = "Stegerwald"; spd_relation -= 5; dnvp_relation += 8; workers_z += 1*(1-dissent); new_middle_z -= 1;
 
 Adam Stegerwald has been elected as the chairman of the [? if z_party_name != "CVP": <span style="color: #000000;">**Center Party's**</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. He seems to represent a rightward turn from Marx, despite his trade union background, and will preside over a [? if z_party_name != "CVP": <span style="color: #000000;">**Center Party's**</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] less inclined to compromise with the left. He views the [? if z_party_name != "CVP": <span style="color: #000000;">**Center Party's**</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] as a prototype for a <span style="color: #000000;">Christian</span>, <span style="color: #586593;">democratic</span>, <span style="color: #000000;">German</span>, and <span style="color: #c00000;">social</span> party, and aims to transform it according to the principles laid out in his proposed "Essen program" eight years prior. 
@@ -30,8 +30,8 @@ Adam Stegerwald has been elected as the chairman of the [? if z_party_name != "C
 @stegerwald
 unavailable-subtitle: [? if labor_dissent > 15: The white collar unions are still unhappy with Stegerwald's decision oppose wage increases last year. ?][? if labor_strength < 25: Stegerwald does not have enough influence to secure the nomination. ?][? if dnvp_relation < 50 : His policy of cooperation with the <span style="color: #3E88B3;">**DNVP**</span> is unpopular right now. ?]
 subtitle: Stegerwald sits on the right of the labor faction and would rather work with the political right than the <span style="color: #c00000;">**SPD**</span>.
-choose-if: (clerical_relation < 7 and clerical relation > 4 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation >= 50 and labor_strength >= right_strength) or (clerical_relation > 7 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation >= 50 and labor_strength < right_strength)
-view-if: (clerical_relation < 7 and clerical relation > 4 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation >= 50 and labor_strength >= right_strength) or (clerical_relation > 7 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation >= 50 and labor_strength < right_strength)
+choose-if: (clerical_relation < 7 and clerical relation > 4 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation >= 50 and labor_strength >= right_strength) or (clerical_relation > 7 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation >= 50 and labor_strength < right_strength)
+view-if: (clerical_relation < 7 and clerical relation > 4 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation >= 50 and labor_strength >= right_strength) or (clerical_relation > 7 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation >= 50 and labor_strength < right_strength)
 on-arrival: z_party_leader = "Stegerwald"; spd_relation -= 5; dnvp_relation += 8; workers_z += 1*(1-dissent); new_middle_z -= 1; clergy_relation -= 1;
 
 steggy elected
@@ -46,7 +46,7 @@ don't poke around
 
 @fail
 subtitle: Stegerwald has been resoundingly rejected by the rest of the party. 
-view-if: not (clerical_relation >=6 and labor_strength > 25 and; labor_dissent < 20 if civil servants angered = 1 and dnvp_relation > 55 and labor_strength > right_strength) and not (clerical_relation < 7 and clerical relation > 4 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation > 55 and labor_strength >= right_strength) and not (clerical_relation > 7 and labor_strength > 25 and labor_dissent < 20 if civil_servants_angered = 1 and dnvp_relation > 55 and labor_strength < right_strength)
+view-if: not (clerical_relation >=6 and labor_strength > 25 and (labor_dissent < 20 if civil servants angered = 1) and dnvp_relation > 55 and labor_strength > right_strength) and not (clerical_relation < 7 and clerical relation > 4 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation > 55 and labor_strength >= right_strength) and not (clerical_relation > 7 and labor_strength > 25 and (labor_dissent < 20 if civil_servants_angered = 1) and dnvp_relation > 55 and labor_strength < right_strength)
 on-arrival: labor_dissent += 5
 
 steggy blocked
