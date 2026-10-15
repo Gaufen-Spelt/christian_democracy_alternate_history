@@ -28,8 +28,8 @@ as
 
 @influence
 subtitle: The radicalism of the <span style="color: #7A3C00;">**NSDAP**</span> and their propagation of the 'Blood and Soil' ideology has much appeal amongst some members of the <span style="color: #0dba1e;">**Green Front**</span>. We must strengthen the <span style="color: #000000;">**Center Party's**</span> and <span style="color: #3E88B3;">**DNVP**</span> influence in the <span style="color: #0dba1e;">**Green Front**</span>, lest the rural electorate turn to the demagogic <span style="color: #7A3C00;">**Nazis**</span> for a solution. 
-unavailable-subtitle: Kalckreuth's <span style="color: #385A38;">**RLB**</span> will leave the <span style="color: #0dba1e;">**Green Front**</span> if we do this.
-choose-if: rlb_leader = "Schiele" and nazi_
+unavailable-subtitle: [? if rlb_leader = "Kalckreuth" : Kalckreuth's <span style="color: #385A38;">**RLB**</span> will leave the <span style="color: #0dba1e;">**Green Front**</span> if we do this. ?][? if nsdap_votes <= 8: The <span style="color: #7A3C00;">Nazis</span> have not made inroads into the agrarian electorate. ?]
+choose-if: rlb_leader = "Schiele" and nsdap_votes > 8
 on-arrival: rural_nsdap -= 3; nationalism -= 3; rural_nsdap += 1 if green_front = 0.5; rural_nsdap -= 1 if green_front_leader = "Hepp"; special_interests += 3 if green_front_leader = "Hepp"
 
 We rail against the <span style="color: #7A3C00;">**NSDAP's**</span> miltant tendencies and their irresponsible rhetoric, damaging their credibility in the eyes of the farmers.
