@@ -78,14 +78,16 @@ Unfortunately, our investigations have failed to turn up anything. Rumors are th
 
 @propaganda
 subtitle: These costs will be drawn from the Fund for The Protection of the Republic
+view-if: rubicon_crossed = 1
 choose-if: rubicon_crossed = 1
-unavailable_subtitle: Political Extremism is not a problem 
+unavailable_subtitle: Political extremism is not a problem.
 on-arrival: unemployed_kpd -= 3; rural_nsdap -= 3; pro_republic += 3
 
 Utilising mass media like the radio and the press, we have managed to counteract the increasingly radical rhertoric of those on the political extremes.  
 
 @law
 subtitle: Streetfighting has hit dangerous levels.
+view-if: rubicon_crossed = 1
 choose-if: rubicon_crossed = 1
 unavailable_subtitle: There is no need for this right now. 
 on-arrival: pro_republic += 3; rfb_strength -= 50; sa_strength -= 50; sh_strength -= 50
