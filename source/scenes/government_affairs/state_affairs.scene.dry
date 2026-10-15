@@ -4,7 +4,7 @@ is-card: true
 on-arrival: state_affairs_timer += 6; month_actions += 1
 tags: government_affairs
 card-image: img/regional_affairs.jpg
-subtitle: We can implement our state policies
+
 
 = State Affairs
 
