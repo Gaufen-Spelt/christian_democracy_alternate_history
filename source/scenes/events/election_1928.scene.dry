@@ -380,7 +380,7 @@ Grand Coalition (<span style="color: #E3000F;">**SPD**</span> + <span style="col
 
 Bourgeois Coalition (<span style="color: #000000;">**Z**</span> + <span style="color: #69A2BE;">**BVP**</span> [? if ddp_exist: + <span style="color: #DCCA4A;">**[+ ddp_name +]**</span> ?]+ <span style="color: #DCCA4A;">**DVP**</span> + [? if dnvp_ideology = "Moderate": <span style="color: #3F7BC1;">**DNVP**</span> +  ?][? if kvp_formed: <span style="color: #455B95;">**KVP**</span> +  ?][? if wp_exist: <span style="color: #B8996F;">**WP**</span> +  ?][? if dbp_exist: <span style="color: #38C538;">**DBP**</span> +  ?][? if cnblp_exist: <span style="color: #7FCEB1;">**CNBLP**</span> +  ?][? if csvd_exist: <span style="color: #8ED8E4;">**CSVD**</span> +  ?][? if csrp_exist: <span style="color: #FF6B21;">**CSRP**</span> +  ?][? if aspd_exist and aspd_ideology = "Moderate": <span style="color: #FE9E00;">**ASPD**</span> +  ?] <span style="color: #909090;">**Others**</span>): [+ bourgeois_coalition +]%
 
-<span style="color: #3E88B3;">Bürgerblock</span> Coalition (<span style="color: #000000;">**Z**</span> + <span style="color: #69A2BE;">**BVP**</span> + <span style="color: #DCCA4A;">**DVP**</span> + [? if cnblp_exist: <span style="color: #7FCEB1;">**CNBLP**</span> +  ?][? if kvp_formed: <span style="color: #455B95;">**KVP**</span> +  ?] <span style="color: #3F7BC1;">**DNVP**</span> + <span style="color: #909090;">**Others**</span>): {! Q.right_coalition.toFixed(1) !}%
+<span style="color: #3E88B3;">Bürgerblock</span> Coalition (<span style="color: #000000;">**Z**</span> + <span style="color: #69A2BE;">**BVP**</span> + <span style="color: #DCCA4A;">**DVP**</span> + [? if cnblp_exist: <span style="color: #7FCEB1;">**CNBLP**</span> +  ?][? if kvp_formed: <span style="color: #455B95;">**KVP**</span> +  ?] <span style="color: #3F7BC1;">**DNVP**</span> + <span style="color: #909090;">**Others**</span>): [+ right_coalition +]%
 
 [? if nazi_urgency <= 1 and nsdap_r >= 15 : The rapid rise in <span style="color: #7A3C00;">**NSDAP**</span votes is extremely worrying. Many had believed that the party was moribund; now, some of us consider it to be the greatest threat to stability in Germany. ?]
 
@@ -626,7 +626,7 @@ Who should be the chancellor?
 
 @right_coalition
 title: We can form a <span style="color: #3E88B3;">Bürgerblock</span> coalition.
-subtitle: <span style="color: #000000;">**Z**</span> + <span style="color: #69A2BE;">**BVP**</span> + <span style="color: #C0A054;">**DVP**</span> + <span style="color: #3E88B3;">**DNVP**</span> + <span style="color: #808080;">**Others**</span> ({! Q.right_coalition.toFixed(1) !}%)
+subtitle: <span style="color: #000000;">**Z**</span> + <span style="color: #69A2BE;">**BVP**</span> + <span style="color: #C0A054;">**DVP**</span> + <span style="color: #3E88B3;">**DNVP**</span> + <span style="color: #808080;">**Others**</span> ([+ right_coalition +]%)
 view-if: right_coalition >= 50 and rubicon_crossed = 0
 on arrival: in_right_coalition = 1
 
