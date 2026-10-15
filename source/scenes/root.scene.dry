@@ -241,6 +241,7 @@ Q.agriculture_opposition = 30;
 Q.industrial_opposition = 35;
 Q.conservative_opposition = 30;
 Q.dvp_young_plan_modifier = 0.2; 
+Q.anti_junker = 0;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
