@@ -13,10 +13,10 @@ tags: party_affairs
 
 The party is being torn apart by internal dissent. Upset at the leadership and general direction, factions have started sabotaging their rivals, hampering our efforts to win votes and carry out our policies. As the only Catholic party, great care must be taken to appease our socially heterogenous base lest our sidelined members splinter from the party. 
 
-[? if right_dissent > 60 : The right is upset at our direction. ?]
+[? if right_dissent > 60 : The <span style="color: #000000;">Catholic Conservatives</span> are upset at our direction. ?]
 [? if center_dissent > 60 : The centrists are displeased with the direction of our party. ?]
-[? if left_dissent > 60 : The <span style="color: #FF7F00;">left</span> is upset at our direction. ?]
-[? if labor_dissent > 60 : The Christian Trade Unions disagree with our present course of action. ?]
+[? if left_dissent > 60 : The <span style="color: #FF7F00;">Christian Left</span> is upset at our direction. ?]
+[? if labor_dissent > 60 : The <span style="color: #000000;">**Center Party**</span> disagrees with our present course of action. ?]
 [? if young_conservatives_dissent > 60 and young_conservatives = 1 : The young conservatives are in disagreement about our political direction. ?]
 
 Something must be done to reinforce party unity.
@@ -45,28 +45,28 @@ title: Give concessions to the right.
 view-if: right_dissent > 45
 on-arrival: right_dissent -= 7; left_dissent += 4
 
-We have promised to adopt a more conservative posture. This may alienate the <span style="color: #FF7F00;">left</span> wing of our party.
+We have promised to adopt a more conservative posture. This may alienate the <span style="color: #FF7F00;">Christian Left</span> faction of our party.
 
 @concessions_center
 title: Give concessions to the centrists.
 view-if: center_dissent > 45
 on-arrival: center_dissent -= 7; right_dissent += 2; young_conservatives_dissent += 2; left_dissent += 2
 
-We have promised to take more policy suggestions from the centrists. The <span style="color: #FF7F00;">left</span> and right wings of the party might be displeased.
+We have promised to take more policy suggestions from the centrists. The left and right wings of the party are displeased with our vacillation.
 
 @concessions_left
 title: Give concessions to the <span style="color: #FF7F00;">left</span>.
 view-if: left_dissent > 30
 on-arrival: left_dissent -= 7; right_dissent += 4; center_dissent += 2
 
-We have promised that we will listen to the <span style="color: #FF7F00;">left</span> wing of the party. Of course, this leads to increased dissent from the centrists and the conservatives.
+We have promised that we will listen to the <span style="color: #FF7F00;">Christian Left</span> faction in the party. Of course, this leads to increased dissent from the centrists and the conservatives.
 
 @concessions_labor
 title: Give concessions to labor.
 view-if: labor_dissent > 30
 on-arrival: labor_dissent -= 7; center_dissent += 4
 
-The trade unions will be granted more influence in party decision making. This upsets the centrists, who would prefer to centralize political decision making within the party.
+The trade unions will be granted more influence in party decision making. This upsets the centrists, who would prefer to centralize political decision making within the party, as well as the right, who are unhappy over preferential treatment for the workers.
 
 @concessions_neorevisionists
 title: Give concessions to the Young Conservatives.
