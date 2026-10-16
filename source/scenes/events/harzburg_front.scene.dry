@@ -1,5 +1,5 @@
 title: The Harzburg Front
-subtitle: The right-wing forces unite against the incumbent government.
+subtitle: The right-wing forces unite against the [+ chancellor +] cabinet. 
 new-page: true
 tags: event
 view-if: year == 1931 and month >= 11 and dnvp_bruning_support == 0 and in_right_coalition == 0 and dnvp_relation <= 50
@@ -31,9 +31,6 @@ if (Q.nsdap_leader == "Goebbels") {
     Q.harzburg_points += 2;
 }
 !}
-
-
-
 
 = The Harzburg Front
 
