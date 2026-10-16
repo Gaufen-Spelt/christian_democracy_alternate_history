@@ -74,17 +74,8 @@ on-arrival: young_plan_signatures += 9; nationalism += 5; rural_nsdap += 5; spec
 
 With the failure of the Young Plan initiative to reach the required 10% of signatures to be put into a referendum, some of Hugenburg's allies on the Executive Committee have begun to turn on him. His intransigence about the inclusion of the imprisonment paragraph and the surrounding controversy have alienated most of the party and has been attributed as the key cause of the failure. 
 
-@success
-title: The Young Plan Initiative proceeds to a referendum
-on-arrival: young_plan_signatures += 11; nationalism += 3; rural_nsdap += 3; special_interests += 3; rdi_balance += 2
-
-The ability of the Young Plan initiative to garner more than the required 10% of signatures has bolstered Hugenburg’s position within the party. With their goal of forging the <span style="color: #3E88B3;">**DNVP**</span> into a cohesive and rigid "<i>Sammelpartei</i>", Hugenburg’s associates have decided to utilise their influence on the Executive Committee to purge the party of dissidents from the <span style="color: #6D5298;">Christian Social</span> and <span style="color: #0087DC;">Young Conservative</span> wings. 
-
 - @sacked_natcon: The <span style="color: #3E88B3;">National Conservatives</span> wrest control of the <span style="color: #3E88B3;">**DNVP**</span> from Hugenburg and his volksich allies.
 - @sacked_youngcon: The <span style="color: #0087DC;">Young Conservatives</span> wrest control of the <span style="color: #3E88B3;">**DNVP**</span> from Hugenburg and his volksich allies.
-- @historical_split: The <span style="color: #6D5298;">Christian Socials</span> and <span style="color: #0087DC;">Young Conservatives</span> have split from the <span style="color: #3E88B3;">**DNVP**</span>.
-- @agrarian_split: The <span style="color: #6D5298;">Christian Socials</span>, <span style="color: #0087DC;">Young Conservatives</span> and <span style="color: #385A38;">agrarians</span> have split from the <span style="color: #3E88B3;">**DNVP**</span>.
-
 
 @sacked_youngcon
 view-if: young_plan_signatures < 10
@@ -111,6 +102,15 @@ As such, in the vote over the expulsion of Treviranus, the Executive Committee h
 An estate owner from Pomerania and a former candidate for the chairmanship back in 1926, Schlange-Schöningen belongs to the <span style="color: #3E88B3;">National Conservative</span> wing of the <span style="color: #3E88B3;">**DNVP**</span>.
 Despite his leadership of the anti-Hugenburg elements on the left, his staunch opposition to the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic has ingratiated him amongst the more intractable elements of the party. Nevertheless, he represents a sharp left from the "<i>Katastrophenpolitik</i>" of Hugenburg and looks to continue the policies of Westarp.
 
+@success
+title: The Young Plan Initiative proceeds to a referendum
+on-arrival: young_plan_signatures += 11; nationalism += 3; rural_nsdap += 3; special_interests += 3; rdi_balance += 2
+
+The ability of the Young Plan initiative to garner more than the required 10% of signatures has bolstered Hugenburg’s position within the party. With their goal of forging the <span style="color: #3E88B3;">**DNVP**</span> into a cohesive and rigid "<i>Sammelpartei</i>", Hugenburg’s associates have decided to utilise their influence on the Executive Committee to purge the party of dissidents from the <span style="color: #6D5298;">Christian Social</span> and <span style="color: #0087DC;">Young Conservative</span> wings. 
+
+- @historical_split: The <span style="color: #6D5298;">Christian Socials</span> and <span style="color: #0087DC;">Young Conservatives</span> have split from the <span style="color: #3E88B3;">**DNVP**</span>.
+- @agrarian_split: The <span style="color: #6D5298;">Christian Socials</span>, <span style="color: #0087DC;">Young Conservatives</span> and <span style="color: #385A38;">agrarians</span> have split from the <span style="color: #3E88B3;">**DNVP**</span>.
+
 @historical_split
 view-if: young_plan_signatures >= 10
 choose-if: young_plan_signatures >= 10 and (not rpm_strength = 2 or not green_front = 0 or not green_front_leader = "Hepp") 
@@ -124,7 +124,7 @@ However, Schiele and the <span style="color: #385A38;">agrarian</span> wing have
 
 @agrarian_split
 view-if: young_plan_signatures >= 10
-choose-if: young_plan_signatures >= 10 and rpm_strength = 2 and green_front = 0 and green_front_leader = "Hepp"
+choose-if: young_plan_signatures >= 10 and rpm_strength = 2 and (green_front = 0 or green_front_leader = "Hepp")
 unavailable-subtitle: Schiele is not yet willing to split from the <span style="color: #3E88B3;">**DNVP**</span>. 
 on-arrival: agrarian_split += 1; special_interests += 9; rural_dnvp -= 8; rural_cnblp += 5; rural_nsdap += 3; new_middle_dnvp -= 3; old_middle_dnvp += 3; workers_dnvp -= 8; new_middle_wp += 1; old_middle_nsdap += 1
 face-image: img/portraits/Ludwig_Kaas.jpg
