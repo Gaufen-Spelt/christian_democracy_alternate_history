@@ -77,7 +77,7 @@ on-arrival: dnvp_relation += 5; rural_z += 3; rural_dnvp += 3; rural_other += 2;
 face-image: img/portraits/HergtOscar.jpg
 
 Following intense negotiations, the <span style="color: #0dba1e;">Green Front</span> has finally been formed! While negotiations were tricky, <span style="color: #3E88B3;">Schiele</span> has been able to present a comprehensive agricultural program borne from the efforts of all involved parties. Our close relations with the <span style="color: #3E88B3;">**DNVP**</span>, the growing strength of the Rural People's Movement [? if dnvp_leader = 'Hugenberg': as well as the ascension of Hugenberg to the chairmanship of the <span style="color: #3E88B3;">**DNVP**</span> ?] have provided a renewed impetus to the unification of organised agriculture under a single umbrella organisation.
-While its creation will take some time, it is expected that the new organisation's clout will make it a formidable force in German Politics.
+Ultimately, its overall direction will be decided at the upcoming congress in October to elect a leader, with Martin Schiele of the <span style="color: #3E88B3;">**DNVP**</span> already emerging as a frontrunner.
 
 
 @front_meh
