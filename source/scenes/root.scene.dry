@@ -803,6 +803,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'understanding_enemy', 'schleichers_schemes', 'dnvp_congress', 'prussia_elections', 'wurttemberg_elections', 'baden_elections','dnf_formation', 'dnf_formed', 'dnf_collapse_right_coalition',];
 Q.advisor_action_timer = 0;
 // party affairs timers
+Q.bvp_reunify_timer = 0;
 Q.confronting_nazis_timer = 0;
 Q.crisis_program_timer = 0;
 Q.dgb_timer = 0;
