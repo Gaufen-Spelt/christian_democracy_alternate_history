@@ -53,7 +53,7 @@ on-arrival: nationalism += 5; dnvp_relation -= 4; left_dissent += 3; right_disse
 asd
 
 @no_plan
-on-arrival: nationalism += 7; workers_spd -= 3; old_middle_spd -= 3; new_middle_spd -= 3; pacifism -= 1; workers_nsdap += 5; rural_nsdap += 5; rural_dnvp -= 5; catholics_spd -= 5; rural_dvp -= 5; dnvp_relations += 3; spd_relations -= 3; ddp_relations -= 3; left_dissent += 5; labor_dissent += 3; center_dissent += 3
+on-arrival: nationalism += 7; workers_z -= 3; new_middle_z -= 3; pacifism -= 1; workers_nsdap += 5; rural_nsdap += 5; rural_dnvp -= 5; catholics_z -= 5; dnvp_relation += 3; dvp_relation -= 3; spd_relation -= 5; ddp_relations -= 5; left_dissent += 8; labor_dissent += 3; center_dissent += 5
 subtitle: The majority of our party is strongly against this course of action
 
 asd
