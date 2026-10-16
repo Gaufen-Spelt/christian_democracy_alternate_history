@@ -32,4 +32,4 @@ subtitle: The parties of the middle would prefer not to have new elections.
 choose-if: spd_votes < spd_r + 3 and spd_relation >= 45 and rdi_balance >= 1130 and grand_coalition >= 50
 unavailable-subtitle: [? if grand_coalition < 50: - We do not have enough seats to form this government. ?][? if spd_votes > spd_r + 3: - The <span style="color: #c00000;">**SPD**</span> stands to gain from new elections. ?][? if spd_relation < 45: - We do not have adequate relations with the <span style="color: #c00000;">**SPD**</span>. ?][? if rdi_balance < 1130: - The industrialists within the <span style="color: #C0A054;">**DVP**</span> refuse to work with the <span style="color: #c00000;">**SPD**</span>. ?]
 on-arrival: in_grand_coalition = 1; in_popular_front = 0; in_left_front = 0; in_right_coalition = 0; spd_in_government = 1; spd_relation += 5; 
-go-to: grand_coalition_spd_lead
+go-to: election_1928.grand_coalition_spd_lead
