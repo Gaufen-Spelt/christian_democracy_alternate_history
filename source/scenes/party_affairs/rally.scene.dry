@@ -99,7 +99,7 @@ Our speakers defend the status quo and rail against the <span style="color: #700
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, our Catholic base is enthusiastic about our message. ?]
 
 @right
-on-arrival: old_middle_z += 2*(1-dissent); rural_z += 2*(1-dissent); old_middle_z += 1*(1-dissent) if dnvp_relation > 70; rural_z += 1*(1-dissent) if dnvp_relation > 70;
+on-arrival: old_middle_z += 2*(1-dissent); rural_z += 2/3*(1-dissent); old_middle_z += 1/3*(1-dissent) if dnvp_relation > 70; rural_z += 1*(1-dissent) if dnvp_relation > 70;
 
 Rallying the forces of the German Right together paves the way for future cooperation with them. 
 [? if dnvp_relation > 70 : Our constant cooperation with the <span style="color: #3E88B3;">**DNVP**</span> has made our messaging more effective. ?]
