@@ -24,6 +24,7 @@ face-image: img/portraits/lemmer.jpg
 
 With strong support from the business interests residing on the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s right wing, the party has overwhelmingly voted to adopt the Stolper Program as the official program of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
 However, key figures from the left wing and the Young Democrats faction have critisised the program as having 'sacrificed the interests of the small businessman, worker and white-collar employee to those of finance and industry'. As such, the adoption of the Stolper Program represents a decisive shift to the right, leaving the left of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> increasingly uneasy over their place in the party. 
+
 Through the adoption of the Stolper Program and internal reforms designed to give the younger generation more of a say in the party, the Mannheim party congress has injected life into the once moribund <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but whether or not it can withstand the growing appeal of <span style="color: #909090;">**special interest**</span> parties remain to be seen.
 Meanwhile, the reelection of Koch Weser has gone without a hitch, affirming his efforts in creating a united liberal party.
 
@@ -34,5 +35,6 @@ on-arrival: new_middle_other += 2; old_middle_other += 2; ddp_cohesion -= 1; spe
 face-image: img/portraits/heuss.jpg
 
 In the face of strong opposition from the left wing and Young Democrats faction of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, the Stolper Program has been shot down in a decisive internal party vote. [? if agriculture_minister_party = 'DDP': This represents a repudiation of the policies Dietrich has implemented since his appointment as Minister of Agriculture and has left the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> more divided than ever before. ?]
+
 While the reelection of Koch Weser has gone on without a hitch, internal tensions in the party are brewing. Although internal party reforms have been undertaken to give the younger generation more of a say in the party, whether it is sufficient to hold back the growing tide of <span style="color: #909090;">**special interest**</span> remain to be seen. 
 
