@@ -246,6 +246,8 @@ Q.civil_servants_angered = 0;
 Q.chud_joos = 0;
 Q.woke_joos = 0;
 Q.clerical_relation = 5;
+Q.cvp_stegerwald = 0;
+Q.non_cvp_stegerwald = 0;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
