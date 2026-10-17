@@ -42,6 +42,14 @@ Q.adjustmentFactors_dnf_wurttemberg = 0.5;
 Q.adjustmentFactors_nsdap_wurttemberg = 0.7;
 Q.adjustmentFactors_other_wurttemberg = 1.2;
 
+for (var party of Q.parties) {
+    var f = Q['adjustmentFactors_' + party + '_wurttemberg'];
+    if (f === undefined || isNaN(f)) {
+        console.log('Missing factor for', party);
+        Q['adjustmentFactors_' + party + '_wurttemberg'] = 1;
+    }
+}
+
 // Calculate support for each of the parties
 var total_support = 0;
 for (var party of Q.parties) {
